@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Valentine's Envelope for Wulan</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="envelope-wrapper">
+        <div class="envelope">
+          <div class="letter">
+            <div class="text">
+              <strong>Happy Valentine’s Day Wulan!</strong>
+              <p>
+                Berhubung paket hampers coklatnya masih dalam pengiriman, aku
+                cuman mau kasih hadiah Ucapan kecil ini😊
+              </p>
+              <p>
+                Selamat hari kasih sayang, Semoga harimu penuh dengan hal-hal
+                yang bikin kamu senyum dan impian-impian terindah selalu
+                menyertai yaa. Terima kasih telah menjadi seseorang yang kuat
+                dan begitu spesial. Hari ini dan seterusnya, semoga kamu selalu
+                merasa dicintai, dihargai, dan berarti❤️
+              </p>
+              <p>- Dimas🫶</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="heart">
+          <span class="heart-text">Klik Ini</span>
+        </div>
+      </div>
+    </div>
+    <style>
+      .letter {
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out 0.7s;
+      }
+      .flap .letter {
+        opacity: 1;
+      }
+    </style>
+    <script>
+      const envelope = document.querySelector(".envelope-wrapper");
+      envelope.addEventListener("click", () => {
+        envelope.classList.toggle("flap");
+      });
+    </script>
+  </body>
+</html>
