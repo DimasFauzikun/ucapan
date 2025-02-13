@@ -25,7 +25,7 @@ body {
   display: grid;
   place-items: center;
   width: 100%;
-  padding-top: 50px; /* Menurunkan tampilan kartu */
+  padding-top: 60px; /* Menurunkan tampilan kartu */
 }
 
 .container > .envelope-wrapper {
